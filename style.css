@@ -1,0 +1,96 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Push content to the top and footer to the bottom */
+    min-height: 100vh; /* Ensure the page fills the viewport height */
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #ffffff;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+    flex-grow: 1; /* Allow container to take up remaining space */
+  }
+  
+  section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffeb3b;
+  }
+  
+  .clock-display {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  #am-pm {
+    font-size: 0.5em;
+    vertical-align: top;
+    color: #a39f7e;
+  }
+  
+  #stopwatch-display {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .stopwatch-buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .stopwatch-buttons button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  .stopwatch-buttons button:disabled {
+    background-color: #7f8c8d;
+    cursor: not-allowed;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #f0f0f0;
+    font-size: 0.9em;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
